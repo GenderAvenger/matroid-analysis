@@ -1,0 +1,26 @@
+{
+  "name": "matroid-analysis",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:GenderAvenger/matroid-analysis.git",
+  "author": "Gender Avendger <wearegenderavengers@gmail.com>",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "nodemon --watch src --exec yarn babel-node -- src/index.js",
+    "build": "babel src -d lib",
+    "lint": "./node_modules/.bin/eslint 'src/**/*.js'",
+    "test": ""
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.0.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.14.2",
+    "nodemon": "^1.19.1"
+  }
+}
